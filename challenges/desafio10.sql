@@ -1,13 +1,22 @@
--- Descomente e altere as linhas abaixo:
-
--- CREATE TABLE SpotifyClone.tabela(
---     coluna1 tipo restricoes,
---     coluna2 tipo restricoes,
---     colunaN tipo restricoes,
+-- CREATE TABLE SpotifyClone.favorites(
+--     user_id INT AUTO_INCREMENT,
+--     -- songs_fav VARCHAR(100) NOT NULL,
+--     -- user_name VARCHAR(50) NOT NULL,
 -- ) engine = InnoDB;
 
--- INSERT INTO SpotifyClone.tabela (coluna1, coluna2)
+-- INSERT INTO SpotifyClone.favorites (user_id, songs_fav, user_name)
 -- VALUES
---   ('exemplo de dados 1', 'exemplo de dados A'),
---   ('exemplo de dados 2', 'exemplo de dados B'),
---   ('exemplo de dados 3', 'exemplo de dados C');
+--   ('1', 'ALIEN SUPERSTAR' 'Barbara Liskov'),
+--   ('1', 'Como Nossos Pais' 'Barbara Liskov'),
+--   ('1', 'Feeling Good' 'Barbara Liskov'),
+--   ('2', 'Dont Stop Me Now', 'Robert Cecil Martin'),
+--   ('3', 'BREAK MY SOUL', 'Ada Lovelace'),
+--   ('3', 'ALIEN SUPERSTAR', 'Ada Lovelace'),
+--   ('4', 'O Medo de Amar é o Medo de Ser Livre', 'Martin Fowler'),
+--   ('4', 'Dont Stop Me Now', 'Martin Fowler'),
+--   ('5', 'Feeling Good', 'Sandi Metz'),
+--   ('5', 'VIRGOS GROOVE', 'Sandi Metz'),
+--   ('6', 'Dont Stop Me Now', 'Christopher Alexander'),
+--   ('7', 'O Medo de Amar é o Medo de Ser Livre', 'Judith Butler'),
+--   ('8', 'ALIEN SUPERSTAR', 'Jorge Amado');
+
