@@ -1,22 +1,24 @@
--- CREATE TABLE SpotifyClone.favorites(
---     user_id INT AUTO_INCREMENT,
---     -- songs_fav VARCHAR(100) NOT NULL,
---     -- user_name VARCHAR(50) NOT NULL,
--- ) engine = InnoDB;
+CREATE TABLE SpotifyClone.favorites(
+    user_id INT,
+    song_id INT,
+    PRIMARY KEY (user_id, song_id),
+    FOREIGN KEY (user_id) REFERENCES SpotifyClone.users(user_id),
+    FOREIGN KEY (song_id) REFERENCES SpotifyClone.songs(song_id)
+) engine = InnoDB;
 
--- INSERT INTO SpotifyClone.favorites (user_id, songs_fav, user_name)
--- VALUES
---   ('1', 'ALIEN SUPERSTAR' 'Barbara Liskov'),
---   ('1', 'Como Nossos Pais' 'Barbara Liskov'),
---   ('1', 'Feeling Good' 'Barbara Liskov'),
---   ('2', 'Dont Stop Me Now', 'Robert Cecil Martin'),
---   ('3', 'BREAK MY SOUL', 'Ada Lovelace'),
---   ('3', 'ALIEN SUPERSTAR', 'Ada Lovelace'),
---   ('4', 'O Medo de Amar é o Medo de Ser Livre', 'Martin Fowler'),
---   ('4', 'Dont Stop Me Now', 'Martin Fowler'),
---   ('5', 'Feeling Good', 'Sandi Metz'),
---   ('5', 'VIRGOS GROOVE', 'Sandi Metz'),
---   ('6', 'Dont Stop Me Now', 'Christopher Alexander'),
---   ('7', 'O Medo de Amar é o Medo de Ser Livre', 'Judith Butler'),
---   ('8', 'ALIEN SUPERSTAR', 'Jorge Amado');
+INSERT INTO SpotifyClone.favorites (user_id, song_id)
+VALUES
+  (1, 3),
+  (1, 6),
+  (1, 10),
+  (2, 4),
+  (3, 1),
+  (3, 3),
+  (4, 7),
+  (4, 4),
+  (5, 10),
+  (5, 2),
+  (8, 4),
+  (9, 7),
+  (10, 3);
 
